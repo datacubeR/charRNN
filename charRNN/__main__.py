@@ -47,7 +47,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Generate text with CharRNN model"
     )
-    parser.add_argument("-cp", "--checkpoint", type=str, required=True)
+    parser.add_argument(
+        "-cp",
+        "--checkpoint",
+        type=str,
+        required=True,
+        help="Checkpoint name",
+    )
     parser.add_argument("-p", "--prob", action="store_true")
     parser.add_argument("-t", "--temp", type=float, default=1)
     parser.add_argument("-c", "--chars", type=int, default=100)

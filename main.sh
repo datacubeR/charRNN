@@ -1,0 +1,1 @@
+python -m charRNN -cp CharRNN_30 -t 0.3 -c 1000 -p
